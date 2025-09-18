@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         New Userscript
+// @name         运维平台脚本
 // @namespace    http://tampermonkey.net/
 // @version      2025-08-19
 // @description  try to take over the world!
