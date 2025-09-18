@@ -26,7 +26,7 @@
     if (matchRes && matchRes[0]) {
       lastApplication = matchRes[0]
       renderDesc()
-      !ctrBoxDom && injectCtr()
+      !checkHasCtr() && injectCtr()
       checkTimer && clearTimeout(checkTimer)
       console.log('重置选中应用')
     }
@@ -80,4 +80,7 @@
     });
     open.apply(this, arguments);
   };
+  function checkHasCtr() {
+    return ctrBoxDom && document.querySelector('.is-plain').nextElementSibling
+  }
 })();
